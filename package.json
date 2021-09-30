@@ -1,0 +1,27 @@
+{
+    "name": "bladebotlist-bot",
+    "version": "4.0.0-rc1",
+    "description": "Discord bot made for bladebotlist",
+    "main": "index.js",
+    "scripts": {
+        "start": "node .",
+        "dev": "nodemon ."
+    },
+    "author": "HiiZun",
+    "license": "MIT",
+    "devDependencies": {
+        "nodemon": "^2.0.6"
+    },
+    "dependencies": {
+        "@discord-player/downloader": "^2.0.3",
+        "@discord-player/extractor": "^3.0.2",
+        "@discordjs/opus": "^0.5.3",
+        "discord-player": "^4.1.4",
+        "discord.js": "12.5.3",
+        "dotenv": "latest",
+        "moment": "^2.29.1",
+        "moment-duration-format": "^2.3.2",
+        "node-fetch": "^2.6.1",
+        "node-http-ping": "^0.3.1"
+    }
+}

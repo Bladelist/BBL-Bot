@@ -5,12 +5,12 @@ class Ready {
     }
 
     run() {
-        this.client.user.setActivity(`over bladebotlist 🔥`, { type: "WATCHING" })
+        this.client.user.setActivity(`over bladelist 🔥`, { type: "WATCHING" })
 
         console.log(`${this.client.user.tag} Started!`)
 
         setInterval(() => {
-            this.client.user.setActivity(`over bladebotlist 🔥`, { type: "WATCHING" })
+            this.client.user.setActivity(`over bladelist 🔥`, { type: "WATCHING" })
             this.client.guilds.cache.forEach(g => g.members.fetch())
                 //  this.checkStatus()
         }, 5 * 60 * 1000);

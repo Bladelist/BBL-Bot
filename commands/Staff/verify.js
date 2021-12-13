@@ -34,8 +34,8 @@ class Verify extends Command {
         if (message.guild.channels.cache.some(ch => ch.name.startsWith(`session-${b.id}`)))
             return message.channel.send(":x: An other verifier already started a session to verify this bot!")
 
-
-        if (bot.status && bot.status !== "UNVERIFIED" && bot.status !== "UNDER_REVIEW") return message.channel.send(":x: This bot is not in waiting to be verified!")
+        if (b.verification_status && b.verification_status !== "UNDER_REVIEW" && b.verification_status !== "UNVERIFIED")
+            return message.channel.send(new MessageEmbed().setDescription(`Bot is not waiting to be verified.`).setColor("RED").setFooter("https://bladelist.gg", this.client.user.displayAvatarURL()).setTimestamp())
 
         let m = await message.channel.send("⌛ Creating verification session, please wait...")
 

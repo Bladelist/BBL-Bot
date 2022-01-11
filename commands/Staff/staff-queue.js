@@ -25,7 +25,7 @@ class StaffQueue extends Command {
             } else {
                 bots.slice(0, 25)
                 bots.forEach(b => {
-                    embed.addField(`#${bots.indexOf(b)} ${b.name||"unable to find"}`, `[\`[View]\`](https://bladelist.gg/bot/${b.id}) [\`[Invite]\`](https://bladelist.gg/bot/${b.id}/invite) [\`[Manage]\`](https://bladelist.gg/staff)`)
+                    embed.addField(`#${bots.indexOf(b)} ${b.name||"unable to find"}`, `[\`[View]\`](https://bladelist.gg/bots/${b.id}) [\`[Invite]\`](https://bladelist.gg/bots/${b.id}/invite) [\`[Manage]\`](https://bladelist.gg/staff)`)
                 })
             }
             return message.channel.send(embed)

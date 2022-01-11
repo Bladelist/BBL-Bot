@@ -53,7 +53,7 @@ class Verify extends Command {
 
             m.edit(`Started Verification session!`)
 
-            c.send(`Hey <@${message.author.id}>\nWelcome in your verification session!\nYou're verifying ${bot.name} (https://bladebotlist.xyz/bot/${b.id})\n**Basic infos:** \nPrefix: ${bot.meta.prefix||"not defined"}\nShort desc: ${bot.short_desc}\nTags: ${Array.isArray(bot.meta.tags) ? bot.meta.tags.join(", ")||"no tags" : bot.meta.tags||"no tags"}\nInvite url: ${bot.invite||"none"}`)
+            c.send(`Hey <@${message.author.id}>\nWelcome in your verification session!\nYou're verifying ${bot.name} (https://bladelist.gg/bots/${b.id})\n**Basic infos:** \nPrefix: ${bot.meta.prefix||"not defined"}\nShort desc: ${bot.short_desc}\nTags: ${Array.isArray(bot.meta.tags) ? bot.meta.tags.join(", ")||"no tags" : bot.meta.tags||"no tags"}\nInvite url: ${bot.invite||"none"}`)
             return true;
         } catch (e) {
             return message.channel.send(`:x: Session creation failed with an error code: ${e}`)
